@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ThinkRush</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/AppIcon.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/AppIcon.png" alt="ThinkRush Logo" class="logo-image">
+                    <h1>ThinkRush</h1>
+                </div>
+                <nav class="nav">
+                    <a href="privacy.html" class="nav-link">Privacy</a>
+                    <a href="terms.html" class="nav-link">Terms</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Contact Us</h1>
+                    <p class="hero-subtitle">We'd love to hear from you. Get in touch with us for support, feedback, or any questions.</p>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="content-wrapper">
+                    <div class="contact-grid">
+                        <div class="contact-info-section">
+                            <h2>Get in Touch</h2>
+                            <p>Have questions about ThinkRush? We're here to help! Reach out to us through any of the following channels.</p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="contact-icon">📧</div>
+                                    <div class="contact-details">
+                                        <h3>Email Support</h3>
+                                        <p>For general inquiries and support</p>
+                                        <a href="mailto:robert.gjoshevski@outlook.com" class="contact-link">robert.gjoshevski@outlook.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">🔧</div>
+                                    <div class="contact-details">
+                                        <h3>Technical Support</h3>
+                                        <p>For technical issues and bug reports</p>
+                                        <a href="mailto:robert.gjoshevski@outlook.com" class="contact-link">robert.gjoshevski@outlook.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">📱</div>
+                                    <div class="contact-details">
+                                        <h3>App Support</h3>
+                                        <p>For app-related questions and feedback</p>
+                                        <a href="mailto:robert.gjoshevski@outlook.com" class="contact-link">robert.gjoshevski@outlook.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">🔒</div>
+                                    <div class="contact-details">
+                                        <h3>Privacy & Legal</h3>
+                                        <p>For privacy concerns and legal matters</p>
+                                        <a href="mailto:robert.gjoshevski@outlook.com" class="contact-link">robert.gjoshevski@outlook.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form-section">
+                            <h2>Send us a Message</h2>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="bug">Bug Report</option>
+                                        <option value="privacy">Privacy Concern</option>
+                                        <option value="legal">Legal Matter</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-section">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-grid">
+                            <div class="faq-item">
+                                <h3>How do I create an account?</h3>
+                                <p>Download the ThinkRush app and follow the registration process. You'll need to provide a valid email address and create a password.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>How do I play with friends?</h3>
+                                <p>You can invite friends by sharing your username or by creating a private game room with an invite code.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>Is ThinkRush free to use?</h3>
+                                <p>Yes, ThinkRush is completely free to download and play. All core features are available without any cost.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>How do I report a bug?</h3>
+                                <p>Use the contact form above or email us directly with details about the issue you're experiencing.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>Can I delete my account?</h3>
+                                <p>Yes, you can delete your account at any time through the app settings or by contacting us directly.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3>Is my data secure?</h3>
+                                <p>We take data security seriously. Please review our Privacy Policy for detailed information about how we protect your data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/AppIcon.png" alt="ThinkRush Logo" class="footer-logo-image">
+                        <h3>ThinkRush</h3>
+                    </div>
+                    <p>Challenge your mind, connect with friends, and have fun with trivia battles.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/RobertGjoshevski/ThinkRushWebsite" target="_blank">GitHub</a></li>
+                        <li><a href="mailto:robert.gjoshevski@outlook.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ThinkRush. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create mailto link
+            const mailtoLink = `mailto:robert.gjoshevski@outlook.com?subject=${encodeURIComponent(subject)} - ${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your message! Your email client should open with a pre-filled message. If it doesn\'t, please email us directly at robert.gjoshevski@outlook.com');
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html> 

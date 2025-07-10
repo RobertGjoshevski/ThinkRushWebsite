@@ -524,6 +524,12 @@ body {
     margin-bottom: var(--spacing-4);
 }
 
+.footer-logo h3 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+}
+
 .footer-logo-image {
     width: 24px;
     height: 24px;
@@ -713,16 +719,14 @@ body {
     color: var(--gray-900);
 }
 
-/* Contact Grid */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-12);
-    margin-bottom: var(--spacing-12);
+/* Contact Info Section */
+.contact-info-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-8);
 }
 
-.contact-info-section h2,
-.contact-form-section h2 {
+.contact-info-section h2 {
     font-size: var(--font-size-2xl);
     font-weight: 600;
     color: var(--gray-900);
@@ -780,56 +784,15 @@ body {
     text-decoration: underline;
 }
 
-/* Contact Form */
-.contact-form {
-    background: var(--white);
-    padding: var(--spacing-8);
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--gray-200);
-}
 
-.form-group {
-    margin-bottom: var(--spacing-6);
-}
-
-.form-group label {
-    display: block;
-    font-weight: 500;
-    color: var(--gray-700);
-    margin-bottom: var(--spacing-2);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: var(--spacing-3) var(--spacing-4);
-    border: 2px solid var(--gray-200);
-    border-radius: var(--radius-lg);
-    font-size: var(--font-size-base);
-    transition: border-color var(--transition-fast);
-    background: var(--white);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
 
 /* FAQ Section */
 .faq-section {
     margin-top: var(--spacing-12);
     padding-top: var(--spacing-12);
     border-top: 1px solid var(--gray-200);
+    padding-left: var(--spacing-8);
+    padding-right: var(--spacing-8);
 }
 
 .faq-section h2 {
@@ -873,11 +836,6 @@ body {
 
 /* Responsive Design Updates */
 @media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-8);
-    }
-    
     .hero-buttons {
         flex-direction: column;
         align-items: center;

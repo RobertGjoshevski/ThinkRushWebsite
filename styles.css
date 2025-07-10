@@ -528,12 +528,15 @@ body {
     margin: 0;
     font-size: var(--font-size-xl);
     font-weight: 600;
+    line-height: 1;
 }
 
 .footer-logo-image {
     width: 24px;
     height: 24px;
     border-radius: var(--radius-sm);
+    flex-shrink: 0;
+    align-self: center;
 }
 
 .footer-content {

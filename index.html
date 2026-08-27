@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThinkRush – AI-Powered Trivia Game</title>
     <meta name="description" content="Think Fast, Play Smart. AI-powered trivia with infinite topics, real-time multiplayer battles, custom quiz packs, and weekly challenges. Download free on iOS and Android.">
-    <meta name="theme-color" content="#6366f1">
+    <meta name="theme-color" content="#1a0a3a">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="ThinkRush – AI-Powered Trivia Game">
     <meta property="og:description" content="Challenge friends and the world in the ultimate trivia showdown. Infinite AI topics, multiplayer battles, and custom quizzes.">
-    <meta property="og:image" content="https://thinkrush.rgsoft.org/assets/screenshots/home-grid.jpg">
+    <meta property="og:image" content="https://thinkrush.rgsoft.org/assets/screenshots/app-store/slice-02.jpg">
     <meta property="og:url" content="https://thinkrush.rgsoft.org">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ThinkRush">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ThinkRush – AI-Powered Trivia Game">
     <meta name="twitter:description" content="Challenge friends and the world in the ultimate trivia showdown. Infinite AI topics, multiplayer battles, and custom quizzes.">
-    <meta name="twitter:image" content="https://thinkrush.rgsoft.org/assets/screenshots/home-grid.jpg">
+    <meta name="twitter:image" content="https://thinkrush.rgsoft.org/assets/screenshots/app-store/slice-02.jpg">
 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/AppIcon.png">
     <link rel="apple-touch-icon" href="assets/AppIcon.png">
 </head>
-<body class="landing-page">
+<body class="site-dark">
+    <div class="bg-mesh" aria-hidden="true"></div>
+
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <a href="index.html" class="logo" aria-label="ThinkRush home">
-                    <img src="assets/AppIcon.png" alt="" class="logo-image" width="32" height="32">
+                    <img src="assets/AppIcon.png" alt="" class="logo-image" width="36" height="36">
                     <span class="logo-text">ThinkRush</span>
                 </a>
                 <nav class="nav" aria-label="Main navigation">
@@ -47,14 +47,14 @@
         </div>
     </header>
 
-    <main class="main landing-main">
+    <main class="main">
         <!-- Hero -->
-        <section class="hero-landing" aria-labelledby="hero-heading">
-            <div class="container hero-landing-inner">
-                <div class="hero-landing-copy">
+        <section class="hero-game" aria-labelledby="hero-heading">
+            <div class="container hero-game-inner">
+                <div class="hero-game-copy reveal">
                     <p class="hero-eyebrow">AI-Powered Trivia</p>
-                    <h1 id="hero-heading" class="hero-landing-title">Think Fast, Play Smart</h1>
-                    <p class="hero-landing-subtitle">Challenge friends and the world in the ultimate trivia showdown.</p>
+                    <h1 id="hero-heading" class="hero-game-title">Think Fast, Play Smart</h1>
+                    <p class="hero-game-subtitle">Challenge friends and the world in the ultimate trivia showdown.</p>
                     <div class="store-buttons" id="download">
                         <a href="https://apps.apple.com/us/app/think-rush-quiz-rivals/id6746662154" class="store-badge-link" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                             <img src="assets/badges/app-store.svg" alt="Download on the App Store" class="store-badge store-badge-apple" width="156" height="52">
@@ -64,111 +64,137 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-landing-visual">
-                    <img src="assets/AppIcon.png" alt="ThinkRush mascot – a lightbulb with glasses" class="hero-mascot" width="280" height="280">
-                    <div class="hero-glow" aria-hidden="true"></div>
+                <div class="hero-game-visual reveal">
+                    <img src="assets/AppIcon.png" alt="" class="hero-mascot-float" width="120" height="120" aria-hidden="true">
+                    <div class="phone-frame hero-phone">
+                        <div class="phone-frame-inner">
+                            <img src="assets/screenshots/app-store/slice-01.jpg" alt="ThinkRush splash screen — Think Fast, Play Smart" width="390" height="844" loading="eager">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Screenshots -->
-        <section class="screenshots-section" aria-labelledby="screenshots-heading">
-            <div class="container">
+        <!-- Screenshot Carousel -->
+        <section class="showcase-section" aria-labelledby="showcase-heading">
+            <div class="container reveal">
                 <div class="section-header">
-                    <h2 id="screenshots-heading" class="section-title">Knowledge Without Limits</h2>
-                    <p class="section-subtitle">AI-powered questions ensure you never run out of new challenges.</p>
+                    <h2 id="showcase-heading" class="section-title">See It In Action</h2>
+                    <p class="section-subtitle">Knowledge without limits — AI-powered questions, real-time battles, and endless topics.</p>
                 </div>
-                <div class="screenshots-showcase">
-                    <div class="device-frame">
-                        <div class="device-notch" aria-hidden="true"></div>
-                        <img src="assets/screenshots/home-grid.jpg" alt="ThinkRush home screen showing Online, Play With Friends, Community, Endless, and Topics game modes" class="device-screenshot" width="526" height="296" loading="lazy">
-                    </div>
-                    <div class="screenshots-grid">
-                        <figure class="screenshot-card">
-                            <img src="assets/screenshots/weekly-quiz.jpg" alt="Weekly AI quiz challenge screen" width="526" height="296" loading="lazy">
-                            <figcaption>Weekly AI quizzes</figcaption>
-                        </figure>
-                        <figure class="screenshot-card">
-                            <img src="assets/screenshots/multiplayer.jpg" alt="Real-time multiplayer battle screen" width="526" height="296" loading="lazy">
-                            <figcaption>Multiplayer battles</figcaption>
-                        </figure>
-                        <figure class="screenshot-card">
-                            <img src="assets/screenshots/splash.jpg" alt="ThinkRush splash screen with mascot and tagline" width="526" height="296" loading="lazy">
-                            <figcaption>Play your way</figcaption>
-                        </figure>
-                    </div>
+            </div>
+            <div class="screenshot-carousel" role="region" aria-label="App screenshots" tabindex="0">
+                <div class="screenshot-carousel-track">
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-01.jpg" alt="Think Fast, Play Smart splash screen" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Think Fast, Play Smart</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-02.jpg" alt="Home screen with Online, Friends, Community, Endless, and Topics modes" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Every mode, one tap away</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-03.jpg" alt="Knowledge Without Limits weekly AI quiz" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Knowledge Without Limits</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-04.jpg" alt="Be The Quiz Master — create custom themes" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Be The Quiz Master</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-05.jpg" alt="Track Your Growth statistics dashboard" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Track Your Growth</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-06.jpg" alt="Collect and Conquer inventory and deck" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Collect &amp; Conquer</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-07.jpg" alt="Test Your Endurance endless mode gameplay" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Test Your Endurance</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-08.jpg" alt="Master Your Interests topic performance tracking" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Master Your Interests</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-09.jpg" alt="Learn While You Play trivia question screen" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Learn While You Play</figcaption>
+                    </figure>
+                    <figure class="screenshot-slide">
+                        <div class="phone-frame phone-frame-sm"><div class="phone-frame-inner"><img src="assets/screenshots/app-store/slice-10.jpg" alt="Multiplayer trivia battle gameplay" width="390" height="844" loading="lazy"></div></div>
+                        <figcaption>Battle the world</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
         <!-- Features -->
-        <section class="features-landing" aria-labelledby="features-heading">
+        <section class="features-section" aria-labelledby="features-heading">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal">
                     <h2 id="features-heading" class="section-title">Everything You Need to Dominate</h2>
                     <p class="section-subtitle">From pop culture to science — play exactly what you love.</p>
                 </div>
-                <div class="features-landing-grid">
-                    <article class="feature-landing-card">
-                        <div class="feature-landing-icon" aria-hidden="true">
+                <div class="features-grid">
+                    <article class="glass-card feature-card reveal">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.3 4.7-3.2 6L12 22l-3.8-7C6.3 13.7 5 11.5 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
                         </div>
                         <h3>Infinite AI Topics</h3>
-                        <p>Questions never run dry. From GTA and Taylor Swift to science and history — AI generates fresh challenges on any topic you pick.</p>
+                        <p>From GTA and Taylor Swift to science and history — AI generates fresh challenges on any topic you pick.</p>
                     </article>
-                    <article class="feature-landing-card">
-                        <div class="feature-landing-icon" aria-hidden="true">
+                    <article class="glass-card feature-card reveal">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                         </div>
                         <h3>Multiplayer Battles</h3>
                         <p>Challenge friends in real-time trivia duels or take on the world in weekly community quizzes.</p>
                     </article>
-                    <article class="feature-landing-card">
-                        <div class="feature-landing-icon" aria-hidden="true">
+                    <article class="glass-card feature-card reveal">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
                         </div>
                         <h3>Create &amp; Share Quizzes</h3>
                         <p>Become the Quizmaster. Design custom theme packs and share them with the community.</p>
                     </article>
-                    <article class="feature-landing-card">
-                        <div class="feature-landing-icon" aria-hidden="true">
+                    <article class="glass-card feature-card reveal">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
                         </div>
                         <h3>Endless Mode</h3>
                         <p>Test your endurance with non-stop questions. How far can your knowledge take you?</p>
                     </article>
-                    <article class="feature-landing-card">
-                        <div class="feature-landing-icon" aria-hidden="true">
+                    <article class="glass-card feature-card reveal">
+                        <div class="feature-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
                         </div>
                         <h3>Leaderboards &amp; Stats</h3>
-                        <p>Climb global rankings, track your performance over time, and spot strengths and weak spots.</p>
+                        <p>Climb global rankings, track your performance, and spot strengths and weak spots.</p>
                     </article>
-                    <article class="feature-landing-card">
-                        <div class="feature-landing-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                    <article class="glass-card feature-card reveal">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
                         </div>
                         <h3>Avatars &amp; Achievements</h3>
-                        <p>Earn rewards, build your inventory, unlock achievements, and customize your profile as you level up.</p>
+                        <p>Earn rewards, build your inventory, unlock achievements, and customize your profile.</p>
                     </article>
                 </div>
             </div>
         </section>
 
         <!-- Download CTA -->
-        <section class="download-cta" aria-labelledby="download-heading">
-            <div class="container download-cta-inner">
-                <div class="download-cta-copy">
-                    <h2 id="download-heading" class="section-title section-title-light">Ready to Prove You're the Smartest?</h2>
-                    <p class="section-subtitle section-subtitle-light">Download ThinkRush free and start your trivia journey today.</p>
-                    <div class="store-buttons store-buttons-center">
-                        <a href="https://apps.apple.com/us/app/think-rush-quiz-rivals/id6746662154" class="store-badge-link" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
-                            <img src="assets/badges/app-store.svg" alt="Download on the App Store" class="store-badge store-badge-apple" width="156" height="52">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=org.rgsoft.thinkrush" class="store-badge-link" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
-                            <img src="assets/badges/google-play.png" alt="Get it on Google Play" class="store-badge store-badge-google" width="180" height="52">
-                        </a>
-                    </div>
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container cta-inner reveal">
+                <h2 id="cta-heading" class="section-title section-title-accent">Ready to Prove You're the Smartest?</h2>
+                <p class="section-subtitle">Download ThinkRush free and start your trivia journey today.</p>
+                <div class="store-buttons store-buttons-center">
+                    <a href="https://apps.apple.com/us/app/think-rush-quiz-rivals/id6746662154" class="store-badge-link" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <img src="assets/badges/app-store.svg" alt="Download on the App Store" class="store-badge store-badge-apple" width="156" height="52">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=org.rgsoft.thinkrush" class="store-badge-link" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+                        <img src="assets/badges/google-play.png" alt="Get it on Google Play" class="store-badge store-badge-google" width="180" height="52">
+                    </a>
                 </div>
             </div>
         </section>
@@ -208,15 +234,6 @@
         </div>
     </footer>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script src="site.js"></script>
 </body>
 </html>

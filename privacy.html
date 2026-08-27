@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - ThinkRush</title>
+    <meta name="theme-color" content="#1a0a3a">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/AppIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/AppIcon.png">
 </head>
-<body>
+<body class="site-dark">
+    <div class="bg-mesh" aria-hidden="true"></div>
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="assets/AppIcon.png" alt="ThinkRush Logo" class="logo-image">
-                    <h1>ThinkRush</h1>
-                </div>
+                <a href="index.html" class="logo" aria-label="ThinkRush home">
+                    <img src="assets/AppIcon.png" alt="" class="logo-image" width="36" height="36">
+                    <span class="logo-text">ThinkRush</span>
+                </a>
                 <nav class="nav">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="index.html#download" class="nav-link">Download</a>
@@ -31,18 +33,16 @@
 
     <main class="main">
         <div class="container">
-            <section class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">Privacy Policy</h1>
-                    <p class="hero-subtitle">Your privacy matters to us. Learn how we protect and handle your information.</p>
-                    <div class="hero-meta">
-                        <span class="last-updated">Last updated: January 2025</span>
-                        <span class="version">Version 1.0</span>
-                    </div>
+            <section class="page-hero">
+                <h1 class="page-hero-title">Privacy Policy</h1>
+                <p class="page-hero-subtitle">Your privacy matters to us. Learn how we protect and handle your information.</p>
+                <div class="page-hero-meta">
+                    <span class="page-meta-badge">Last updated: January 2025</span>
+                    <span class="page-meta-badge">Version 1.0</span>
                 </div>
             </section>
 
-            <section class="content">
+            <section class="page-content">
                 <div class="content-wrapper">
                     <article class="policy-section">
                         <h2 id="introduction">Introduction</h2>
@@ -210,9 +210,12 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <h3>ThinkRush</h3>
+                        <div class="footer-logo-inner">
+                            <img src="assets/AppIcon.png" alt="" class="footer-logo-image" width="28" height="28">
+                            <h3>ThinkRush</h3>
+                        </div>
                     </div>
-                    <p>Challenge your mind, connect with friends, and have fun with trivia battles.</p>
+                    <p>Think Fast, Play Smart. AI-powered trivia battles for curious minds everywhere.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Legal</h4>
@@ -226,40 +229,16 @@
                     <h4>Connect</h4>
                     <ul>
                         <li><a href="https://github.com/RobertGjoshevski/ThinkRushWebsite" target="_blank">GitHub</a></li>
-                        <li><a href="mailto:robert.gjoshevski@outlook.com">Email</a></li>
+                        <li><a href="mailto:robert.gjoshevski@outlook.com">robert.gjoshevski@outlook.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 ThinkRush. All rights reserved.</p>
+                <p>&copy; 2025 ThinkRush by RGsoft. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script src="site.js"></script>
 </body>
 </html> 

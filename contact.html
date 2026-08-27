@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - ThinkRush</title>
+    <meta name="theme-color" content="#1a0a3a">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/AppIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/AppIcon.png">
 </head>
-<body>
+<body class="site-dark">
+    <div class="bg-mesh" aria-hidden="true"></div>
+
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="assets/AppIcon.png" alt="ThinkRush Logo" class="logo-image">
-                    <h1>ThinkRush</h1>
-                </div>
+                <a href="index.html" class="logo" aria-label="ThinkRush home">
+                    <img src="assets/AppIcon.png" alt="" class="logo-image" width="36" height="36">
+                    <span class="logo-text">ThinkRush</span>
+                </a>
                 <nav class="nav">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="index.html#download" class="nav-link">Download</a>
@@ -31,18 +34,16 @@
 
     <main class="main">
         <div class="container">
-            <section class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">Contact Us</h1>
-                    <p class="hero-subtitle">We'd love to hear from you. Get in touch with us for support, feedback, or any questions.</p>
-                </div>
+            <section class="page-hero">
+                <h1 class="page-hero-title">Contact Us</h1>
+                <p class="page-hero-subtitle">We'd love to hear from you. Get in touch for support, feedback, or any questions.</p>
             </section>
 
-            <section class="content">
+            <section class="page-content">
                 <div class="content-wrapper">
                     <div class="contact-info-section">
                         <h2>Get in Touch</h2>
-                        <p>Have questions about ThinkRush? We're here to help! Reach out to us through any of the following channels.</p>
+                        <p>Have questions about ThinkRush? We're here to help! Reach out through any of the channels below.</p>
                         
                         <div class="contact-methods">
                             <div class="contact-method">
@@ -75,7 +76,7 @@
                             <div class="contact-method">
                                 <div class="contact-icon">🔒</div>
                                 <div class="contact-details">
-                                    <h3>Privacy & Legal</h3>
+                                    <h3>Privacy &amp; Legal</h3>
                                     <p>For privacy concerns and legal matters</p>
                                     <a href="mailto:robert.gjoshevski@outlook.com" class="contact-link">robert.gjoshevski@outlook.com</a>
                                 </div>
@@ -93,17 +94,17 @@
                             
                             <div class="faq-item">
                                 <h3>How do I play with friends?</h3>
-                                <p>You can invite friends by sharing your username or by creating a private game room with an invite code.</p>
+                                <p>Invite friends by sharing your username or by creating a private game room with an invite code.</p>
                             </div>
                             
                             <div class="faq-item">
                                 <h3>Is ThinkRush free to use?</h3>
-                                <p>Yes, ThinkRush is completely free to download and play. All core features are available without any cost.</p>
+                                <p>Yes, ThinkRush is free to download and play. All core features are available without any cost.</p>
                             </div>
                             
                             <div class="faq-item">
                                 <h3>How do I report a bug?</h3>
-                                <p>Use the contact form above or email us directly with details about the issue you're experiencing.</p>
+                                <p>Email us directly with details about the issue you're experiencing.</p>
                             </div>
                             
                             <div class="faq-item">
@@ -113,7 +114,7 @@
                             
                             <div class="faq-item">
                                 <h3>Is my data secure?</h3>
-                                <p>We take data security seriously. Please review our Privacy Policy for detailed information about how we protect your data.</p>
+                                <p>We take data security seriously. Please review our <a href="privacy.html">Privacy Policy</a> for details.</p>
                             </div>
                         </div>
                     </div>
@@ -127,9 +128,12 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <h3>ThinkRush</h3>
+                        <div class="footer-logo-inner">
+                            <img src="assets/AppIcon.png" alt="" class="footer-logo-image" width="28" height="28">
+                            <h3>ThinkRush</h3>
+                        </div>
                     </div>
-                    <p>Challenge your mind, connect with friends, and have fun with trivia battles.</p>
+                    <p>Think Fast, Play Smart. AI-powered trivia battles for curious minds everywhere.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Legal</h4>
@@ -142,27 +146,17 @@
                 <div class="footer-section">
                     <h4>Connect</h4>
                     <ul>
-                        <li><a href="https://github.com/RobertGjoshevski/ThinkRushWebsite" target="_blank">GitHub</a></li>
-                        <li><a href="mailto:robert.gjoshevski@outlook.com">Email</a></li>
+                        <li><a href="https://github.com/RobertGjoshevski/ThinkRushWebsite" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="mailto:robert.gjoshevski@outlook.com">robert.gjoshevski@outlook.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 ThinkRush. All rights reserved.</p>
+                <p>&copy; 2025 ThinkRush by RGsoft. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Add scroll effect to header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script src="site.js"></script>
 </body>
-</html> 
+</html>
